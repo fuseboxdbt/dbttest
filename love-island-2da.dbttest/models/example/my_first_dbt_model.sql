@@ -6,10 +6,10 @@
 
     Try changing "table" to "view" below
 */
+{{ dbt_utils.import }}
+
 
 {{ config(materialized='table') }}
-
-{{ dbt_utils.import }}
 
 
 with source_data as (
