@@ -22,7 +22,7 @@ from {{ dbt_utils.gcs_source(
 
 )
 
-select *
+select pid
 from source_data
 
 /*
